@@ -1,0 +1,17 @@
+{
+  "name": "email-otp-auth-system",
+  "version": "1.0.0",
+  "description": "Production-ready Email OTP Authentication System (MERN Stack)",
+  "scripts": {
+    "install:server": "npm install --prefix server",
+    "install:client": "npm install --prefix client --legacy-peer-deps",
+    "install:all": "npm run install:server && npm run install:client",
+    "server": "npm start --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
